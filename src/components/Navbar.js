@@ -13,6 +13,7 @@ const navigation = [
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [change,setChange]=useState(false);
 
   return (
     <div className="bg-dark text-white ">
@@ -40,13 +41,13 @@ export default function Navbar() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <Link key={item.name} to={item.href} className="text-lg leading-6 text-gray-900">
+              <Link key={item.name} to={item.href} className="text-lg leading-6 text-gray-900" onClick={()=>setChange(!change)}>
                 {item.name}
               </Link>
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <Link to="https://www.linkedin.com/in/siddesh-jaiswal-3961a6223/" className="text-lg  leading-6 text-gray-900">
+            <Link to="https://www.linkedin.com/in/siddesh-jaiswal-3961a6223/" className="text-lg  leading-6 text-gray-900" onClick={()=>setChange(!change)}>
               Developer <span aria-hidden="true">&rarr;</span>
             </Link>
           </div>
@@ -80,7 +81,7 @@ export default function Navbar() {
                       key={item.name}
                       to={item.href}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                    >
+                     onClick={()=>setChange(!change)}>
                       {item.name}
                     </Link>
                   ))}
@@ -89,7 +90,7 @@ export default function Navbar() {
                   <Link
                     to="https://www.linkedin.com/in/siddesh-jaiswal-3961a6223/"
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
+                   onClick={()=>setChange(!change)}>
                     Developer
                   </Link>
                 </div>
