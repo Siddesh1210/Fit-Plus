@@ -16,6 +16,15 @@
     justify-content: center;
     align-items: center;
   }
+
+  @media only screen and (max-width:767px)
+  {
+    .main-carousel-body
+    {
+        display: none !important;
+    }
+
+  }
   
   .swiper .swiper-slide {
     background-position: center;

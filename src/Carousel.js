@@ -40,7 +40,7 @@ function Carousel() {
     <>
       <div className="max-w-[1350px] flex justify-center py-5 text-center mx-auto">
         <div className="basis-[100%]  text-[#fc3b00]">
-          <h1 className="font-extrabold" style={{ fontSize: "11vh" }}>
+          <h1 className="font-extrabold" style={{ fontSize: "10vw" }}>
             TRANSFORM{' '}
             <span style={{ WebkitTextStroke: '1px #fc3b00', color: 'transparent' }}>
               YOUR BODY <br></br> TRANSFORM YOUR

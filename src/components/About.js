@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 function About()
 {
     return(
-        <div className="flex max-w-[1350px] mx-auto justify-around items-center" id="about">
+        <div className="flex flex-wrap max-w-[1350px] mx-auto justify-around items-center " id="about">
             <div className="basis-[45%]">
-                <img src={AboutImg}/>
+                <img src={AboutImg} className='w-full'/>
             </div>
             <div className="basis-[45%]">
                 <h2 className="text-xl text-[#fc3b00] font-extrabold">WE ARE INNOVATOR</h2>
